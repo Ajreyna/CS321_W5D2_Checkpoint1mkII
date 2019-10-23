@@ -16,7 +16,8 @@ namespace CS321_W5D2_BlogAPI.ApiModels
                 Name = blog.Name,
                 Description = blog.Description,
                 // TODO: map user's FullName to authorName
-            };
+                AuthorName = blog.User.FullName
+        };
         }
 
         public static Blog ToDomainModel(this BlogModel blogModel)
