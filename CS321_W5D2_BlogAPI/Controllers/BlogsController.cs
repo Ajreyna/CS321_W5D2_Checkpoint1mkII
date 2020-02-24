@@ -18,6 +18,7 @@ namespace CS321_W5D2_BlogAPI.Controllers
     {
         private readonly IBlogService _blogService;
 
+        // inject BlogService
         // TODO: inject BlogService
         public BlogsController(IBlogService blogService)
         {
